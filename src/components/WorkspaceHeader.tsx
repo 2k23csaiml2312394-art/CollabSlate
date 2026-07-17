@@ -38,7 +38,7 @@ const TopBar: React.FC<Props> = React.memo(({ onCreateRoom, onJoinRoom, onLeave 
           <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center">
             <PenLine size={14} className="text-white" />
           </div>
-          <span className="text-white font-semibold text-sm">SyncCanvas</span>
+          <span className="text-white font-semibold text-sm">CollabSlate</span>
         </div>
 
         {/* Connection status */}
