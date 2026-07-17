@@ -32,7 +32,8 @@ Frontend
 
 Backend
 
-> https://synccanvas-biik.onrender.com
+> https://collabslate-1.onrender.com
+
 
 ---
 
