@@ -1,5 +1,5 @@
  
-# 🎨 SyncCanvas Real-Time Collaborative Whiteboard
+# 🎨 CollabSlate Real-Time Collaborative Whiteboard
 
 <div align="center">
 
@@ -64,7 +64,7 @@ assets/demo.gif
 
 # ✨ Overview
 
-SyncCanvas is a production-inspired collaborative whiteboard designed to simulate the experience of modern design tools such as Figma and Excalidraw.
+CollabSlate is a production-inspired collaborative whiteboard designed to simulate the experience of modern design tools such as Figma and Excalidraw.
 
 The project focuses on frontend engineering, performance optimization, scalable architecture, and real-time collaboration rather than simply implementing drawing functionality.
 
@@ -126,11 +126,11 @@ This project emphasizes:
 │          └─────────────────────┘                           │
 └─────────────────────────────────────────────────────────────┘
 ```
-
-# 📂 Project Structure
-
 ```
-SyncCanvas
+# 📂 Project Structure
+```
+```
+CollabSlate
 │
 ├── server
 │   ├── index.js
@@ -169,7 +169,7 @@ SyncCanvas
 └── main.tsx
 ```
 
----
+```
 
 # 🛠 Tech Stack
 
@@ -185,9 +185,9 @@ SyncCanvas
 | Canvas | HTML5 Canvas API |
 | Backend | Express.js |
 | Testing | Vitest |
-
+```
 ---
-
+```
 # 🎨 Features
 
 ### Drawing Tools
@@ -223,8 +223,8 @@ SyncCanvas
 
 ### Export
 - PNG export via canvas `toDataURL`
-
----
+```
+```
 
 ## Trade-offs
 
@@ -235,21 +235,22 @@ SyncCanvas
 **Snapshot history:** Undo/redo is local-only. Remote users don't see undo operations from other clients.
 
 **eraser implementation:** Uses `globalCompositeOperation: 'destination-out'` which only works correctly on an opaque background. Transparent canvas exports may show artifacts.
-
-
+```
+```
 # ⚡ Performance Optimizations
 
 This project was built with frontend performance as a primary goal.
-
+```
+```
 ### Rendering
 
 - requestAnimationFrame rendering loop
 - High DPI canvas scaling
 - Efficient redraw strategy
 - Canvas rendering independent of React
-
+```
 ---
-
+```
 ### React Optimization
 
 - React.memo
@@ -258,8 +259,8 @@ This project was built with frontend performance as a primary goal.
 - Zustand selectors
 - Ref-based rendering
 - Zero unnecessary re-renders
-
----
+```
+```
 
 ### Realtime Optimization
 
@@ -268,16 +269,16 @@ This project was built with frontend performance as a primary goal.
 - Automatic reconnection
 - Lightweight synchronization
 - Reduced network traffic
-
----
+```
+```
 
 ### Storage
 
 - LocalStorage autosave
 - Session restoration
 - Efficient history stack
-
----
+```
+```
 
 # 📊 Performance Metrics
 
@@ -294,8 +295,8 @@ This project was built with frontend performance as a primary goal.
 ✅ Zero React re-renders while drawing
 
 ✅ Optimized state updates
-
----
+```
+```
 
 # 🧠 Engineering Decisions
 
@@ -303,8 +304,8 @@ This project was built with frontend performance as a primary goal.
 
 Canvas provides significantly better rendering performance for interactive drawing applications compared to SVG when managing hundreds or thousands of objects.
 
----
-
+```
+```
 ## Why Zustand?
 
 - Lightweight
@@ -312,25 +313,25 @@ Canvas provides significantly better rendering performance for interactive drawi
 - Excellent performance
 - Fine-grained subscriptions
 - Scalable architecture
-
+```
 ---
-
+```
 ## Why Socket.IO?
 
 - Automatic reconnect
 - Room management
 - Event acknowledgements
 - Reliable real-time communication
-
+```
 ---
-
+```
 ## Why requestAnimationFrame?
 
 Using requestAnimationFrame ensures rendering stays synchronized with the browser's refresh rate, resulting in smoother drawing and reduced CPU usage.
 
 ---
-
-
+```
+```
 # 🧪 Testing
 
 Implemented using
@@ -345,27 +346,18 @@ Tests include
 - ID generation
 - Hit testing
 
----
+```
 
 # 🚀 Running Locally
 
 Clone the repository
 
 ```bash
-git clone https://github.com/2k23csaiml2312394-art/synccanvas.git
+git clone https://github.com/2k23csaiml2312394-art/collabslate.git
 ```
 
-Frontend
 
-```
-http://localhost:5173
-```
 
-Backend
-
-```
-http://localhost:3001
-```
 
 ---
 
