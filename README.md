@@ -32,7 +32,7 @@ Frontend
 
 Backend
 
-> https://your-render-url.onrender.com
+> https://synccanvas-biik.onrender.com
 
 ---
 
