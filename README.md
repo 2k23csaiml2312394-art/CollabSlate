@@ -28,7 +28,7 @@ Built with **React 19**, **TypeScript**, **HTML5 Canvas**, **Socket.IO**, **Zust
 
 Frontend
 
-> https://collab-slate-271v.vercel.app
+> https://collab-slate-271v.vercel.app/
 
 Backend
 
